@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    width: 300%; /* 3 images, each taking up 100% of the width */
+    animation: scrollImages 9s infinite;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits perfectly and covers the area */
+}
+
+/* Keyframe Animation */
+@keyframes scrollImages {
+    0% { transform: translateX(0); }          /* Show Image 1 */
+    33.33% { transform: translateX(-100%); }  /* Show Image 2 */
+    66.66% { transform: translateX(-200%); }  /* Show Image 3 */
+    100% { transform: translateX(0); }        /* Loop back to Image 1 */
+}
+
+/* Mission Statement Styles */
+.mission-statement p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    color: #35424a;
+}
